@@ -27,7 +27,7 @@ color_list = df[0].values.tolist()
 
 option = streamlit.selectbox('Pick a sweatsuit color or style:', list(color_list))
 
-product_caption = "Our warm, confortable, ' + option + ' sweatsuit!'
+product_caption = "Our warm, confortable, ' + option + ' sweatsuit!'"
 
 my_cur.execute("select direct_url, price, size_list, upsell_product_desc from catalog_for_website where color_or_style ='" + option + "';")
 
