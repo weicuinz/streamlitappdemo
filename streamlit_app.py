@@ -25,7 +25,7 @@ streamlit.write(df)
 
 color_list = df[0].values.tolist()
 
-option = streamlit.selectbox("Pick a sweatsuit color or style:", list(color_list))
+option = streamlit.selectbox('Pick a sweatsuit color or style:', list(color_list))
 
 product_caption = "Our warm, confortable, ' + option + ' sweatsuit!'
 
